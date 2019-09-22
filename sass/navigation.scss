@@ -2,6 +2,7 @@
 
 .navigation {
     position: sticky;
+    z-index: 1000;
     top: 0;
     background-color: $color-primary;
     grid-column: 1 / -1;
