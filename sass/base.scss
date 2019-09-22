@@ -47,3 +47,11 @@ a {
     grid-template-columns: 1fr  repeat(8, minmax(min-content, 15rem)) 1fr;
     grid-template-rows: 7.8rem 80vh repeat(7, min-content);
 }
+
+
+@media only screen and (max-width: 810px) {
+    .container {
+        grid-template-rows: 0vh 80vh repeat(7, min-content);
+    }
+
+}

@@ -1,11 +1,13 @@
-
+.nav-cont {
+    width: 100%;
+    grid-column: 1 / -1;
+}
 
 .navigation {
     position: sticky;
     z-index: 1000;
     top: 0;
     background-color: $color-primary;
-    grid-column: 1 / -1;
     display: grid;
     align-items: center;
 
@@ -13,7 +15,7 @@
         list-style: none;
         height: 7.8rem;
         display: grid;
-        grid-template-columns: 1fr repeat(5 , minmax(min-content, 15rem)) 1fr;
+        grid-template-columns: 1fr repeat(5, minmax(min-content, 15rem)) 1fr;
         grid-column-gap: 1.5rem;
         align-items: center;
 
@@ -48,15 +50,15 @@
         }
     }
 
-    &__link{
+    &__link {
         text-decoration: none;
         color: $color-white;
         padding: 1rem 1.5rem;
         display: block;
-        
+
     }
 
-    &__item:hover{
+    &__item:hover {
         background-color: $color-primary-light-2;
     }
 
@@ -65,4 +67,52 @@
         background-color: $color-primary-light-2;
     }
 
+}
+
+.hamburger-icon {
+    color: black;
+    width: 10rem;
+}
+
+
+.hamburger-menu,
+.nav-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 810px) {
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        left: 93%;
+        top: 2%;
+        z-index: 2000;
+        font-size: 2rem;
+    }
+
+    .hamburger-icon {
+        color: black;
+
+    }
+
+    .navigation {
+        display: none;
+        background-color: rgba($color: #000000, $alpha: 0);
+    }
+
+    .nav-toggle:checked~.navigation {
+        display: grid;
+    }
+
+    .navigation__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        transform: scale(.7);
+
+    }
+    .navigation__item {
+        grid-column: 1 / span 1;
+        background-color: $color-primary;
+        
+    }
 }

@@ -22,12 +22,19 @@ a {
   grid-template-columns: 1fr repeat(8, minmax(min-content, 15rem)) 1fr;
   grid-template-rows: 7.8rem 80vh repeat(7, min-content); }
 
+@media only screen and (max-width: 810px) {
+  .container {
+    grid-template-rows: 0vh 80vh repeat(7, min-content); } }
+
+.nav-cont {
+  width: 100%;
+  grid-column: 1 / -1; }
+
 .navigation {
   position: sticky;
   z-index: 1000;
   top: 0;
   background-color: #383E4C;
-  grid-column: 1 / -1;
   display: grid;
   align-items: center; }
   .navigation__container {
@@ -63,6 +70,37 @@ a {
     background-color: #49505F; }
   .navigation__link:focus, .navigation__link:active {
     background-color: #49505F; }
+
+.hamburger-icon {
+  color: black;
+  width: 10rem; }
+
+.hamburger-menu,
+.nav-toggle {
+  display: none; }
+
+@media only screen and (max-width: 810px) {
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    left: 93%;
+    top: 2%;
+    z-index: 2000;
+    font-size: 2rem; }
+  .hamburger-icon {
+    color: black; }
+  .navigation {
+    display: none;
+    background-color: rgba(0, 0, 0, 0); }
+  .nav-toggle:checked ~ .navigation {
+    display: grid; }
+  .navigation__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    transform: scale(0.7); }
+  .navigation__item {
+    grid-column: 1 / span 1;
+    background-color: #383E4C; } }
 
 .header {
   background-image: url(/src/img/bg-1.jpg);
