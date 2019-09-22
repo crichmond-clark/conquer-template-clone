@@ -20,7 +20,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: 1fr repeat(8, minmax(min-content, 15rem)) 1fr;
-  grid-template-rows: 13vh 80vh repeat(7, min-content); }
+  grid-template-rows: 8.5rem 80vh repeat(7, min-content); }
 
 .navigation {
   position: sticky;
