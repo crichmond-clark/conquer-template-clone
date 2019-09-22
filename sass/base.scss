@@ -2,10 +2,12 @@
 
 $color-primary: #383E4C;
 $color-primary-dark: #262628;
+$color-primary-light: #646D7C;
+$color-primary-light-2: #49505F;
 $color-secondary: #F2F2F2;
 $color-white: #fff;
 
-$font-primary: 'Open Sans'
+$font-primary: 'Open Sans';
 
 
 
@@ -29,6 +31,18 @@ html {
 body {
     font-weight: 300;
     font-family: $font-primary;
-    color: $color-grey-dark-2;
     line-height: 1.6;
+}
+
+a {
+    outline: 0;
+}
+
+
+//GRID
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr  repeat(8, minmax(min-content, 15rem)) 1fr;
+    grid-template-rows: 13vh 80vh repeat(7, min-content);
 }
