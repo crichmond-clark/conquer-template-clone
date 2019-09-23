@@ -1,6 +1,60 @@
 .details {
-    background-color: purple;
     margin-top: 7rem;
 
     grid-column: 2 / 10;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 27rem));
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
+
+    &__card {
+        font-size: 1.4rem;
+        background-color: $color-secondary;
+       display: flex;
+       flex-direction: column;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        padding: 1rem 2rem;
+    }
+
+    &__heading {
+        color: $color-text-primary;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-weight: 400;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    &__button {
+        padding: 1.5rem 2rem;
+        background-color: #E4E4E4;
+        border: none;
+        border-radius: 5px;
+        align-self: center;
+        margin-bottom: 1rem;
+
+        &-1 {
+            margin-top: 2rem;
+        }
+}
 }

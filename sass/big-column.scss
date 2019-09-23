@@ -1,5 +1,46 @@
-.big-column {
-    background-color: pink;
-
+.big-col {
+    background-color: $color-secondary;
+    margin-top: 7rem;
     grid-column: 2 / 10;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        padding: 2rem 4rem;
+        text-align: left;
+        color: $color-text-secondary;
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-text-primary;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    &__button {
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+        background-color: #E4E4E4;
+        border: none;
+        border-radius: 5px;
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            background-color: $color-secondary;
+        }
+    }
 }
