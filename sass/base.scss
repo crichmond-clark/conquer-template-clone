@@ -6,7 +6,8 @@ $color-primary-light: #646D7C;
 $color-primary-light-2: #49505F;
 $color-secondary: #F2F2F2;
 $color-white: #fff;
-$color-text-primary: #333;
+$color-text-primary: #666666;
+
 
 $font-primary: 'Open Sans';
 
@@ -49,9 +50,3 @@ a {
 }
 
 
-@media only screen and (max-width: 810px) {
-    .container {
-        grid-template-rows: 0vh 80vh repeat(7, min-content);
-    }
-
-}

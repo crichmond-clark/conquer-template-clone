@@ -1,5 +1,13 @@
 .story {
-    background-color: teal;
-    margin-top: 10rem;
+    margin-top: 7rem;
     grid-column: 2 / 10;
+
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(min-content, 55rem));
+    column-gap: 3rem;
+    justify-content: center;
+
+    &__img {
+        width: 100%;
+    }
 }
