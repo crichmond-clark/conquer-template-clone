@@ -1,5 +1,28 @@
 .services {
-    background-color: orangered;
+    background-image: url(/src/img/bg-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
     margin-top: 5rem;
     grid-column: 1 / -1;
+
+    display: grid;
+    justify-content: center;
+
+    &__content {
+        color: #fff;
+        padding: 10rem 35rem;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 3.6rem;
+        text-shadow: .2rem .2rem 0 rgba(0, 0, 0, .2);
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-shadow: .1rem .1rem 0 rgba(0, 0, 0, .1);
+    }
 }

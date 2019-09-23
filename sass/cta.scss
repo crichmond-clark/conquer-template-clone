@@ -12,9 +12,8 @@
     &__card {
         background-color: $color-secondary;
         // margin: 0 2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
 
     }
 
@@ -31,7 +30,7 @@
 
     &__content {
         padding: 0 2rem;
-        text-align: left;
+        
 
 
     }
@@ -68,6 +67,7 @@
         font-size: 1.8rem;
         font-weight: 400;
         border-radius: .5rem;
+        align-self: center;
         margin-bottom: 4rem;
 
         &-1 {
