@@ -207,11 +207,13 @@ a {
   margin-top: 5rem;
   grid-column: 1 / -1;
   display: grid;
-  justify-content: center; }
+  grid-template-columns: 1fr minmax(auto, 65rem) 1fr;
+  justify-items: center; }
   .services__content {
     color: #fff;
-    padding: 10rem 35rem;
-    text-align: center; }
+    grid-column: 2;
+    text-align: center;
+    padding: 10rem 0; }
   .services__heading {
     font-size: 3.6rem;
     text-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);
