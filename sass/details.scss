@@ -56,5 +56,10 @@
         &-1 {
             margin-top: 2rem;
         }
+
+        &:hover,
+        &:active {
+            background-color: $color-secondary;
+        }
 }
 }

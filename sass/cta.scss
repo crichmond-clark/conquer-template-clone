@@ -72,14 +72,28 @@
 
         &-1 {
             background-color: #449D44;
+            &:hover,
+            &:active {
+                background-color: rgb(82, 194, 82);
+            }
         }
 
         &-2 {
             background-color: #31B0D5;
+            &:hover,
+            &:active {
+                background-color: rgb(54, 191, 233);
+                ;
+            }
         }
 
         &-3 {
             background-color: #85261D;
+            &:hover,
+            &:active {
+                background-color: rgb(182, 52, 40);
+                
+            }
         }
     }
 

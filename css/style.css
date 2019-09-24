@@ -179,10 +179,16 @@ a {
     margin-bottom: 4rem; }
     .cta__button-1 {
       background-color: #449D44; }
+      .cta__button-1:hover, .cta__button-1:active {
+        background-color: #52c252; }
     .cta__button-2 {
       background-color: #31B0D5; }
+      .cta__button-2:hover, .cta__button-2:active {
+        background-color: #36bfe9; }
     .cta__button-3 {
       background-color: #85261D; }
+      .cta__button-3:hover, .cta__button-3:active {
+        background-color: #b63428; }
 
 @media only screen and (max-width: 1024px) {
   .cta {
@@ -327,6 +333,8 @@ textarea::placeholder {
     margin-bottom: 1rem; }
     .details__button-1 {
       margin-top: 2rem; }
+    .details__button:hover, .details__button:active {
+      background-color: #F2F2F2; }
 
 .footer {
   background-color: #fff;
