@@ -97,6 +97,8 @@ a {
       grid-column: 1 / -1;
       background-color: #383E4C;
       display: grid; }
+    .navigation__link {
+      -webkit-tap-highlight-color: transparent; }
   .nav-toggle:checked ~ .navigation__navbar > .navigation__container {
     grid-row: 2;
     transform: scaleY(1); } }
