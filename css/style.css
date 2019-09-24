@@ -135,7 +135,7 @@ a {
 
 .cta {
   grid-column: 2 / 10;
-  margin-top: 20rem;
+  margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
   column-gap: 3rem;
