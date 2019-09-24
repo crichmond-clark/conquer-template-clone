@@ -98,4 +98,9 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
     }
+
+    .contact__input,
+    .contact__message {
+        margin-bottom: 1rem;
+    }
 }
