@@ -101,6 +101,10 @@
         &__item {
             grid-column: 1 / -1;
             background-color: $color-primary;
+            display: grid;
+        }
+
+        &__link {
         }
     }
 

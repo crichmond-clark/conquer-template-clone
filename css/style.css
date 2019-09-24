@@ -95,7 +95,8 @@ a {
       transition: transform ease-in .4s; }
     .navigation__item {
       grid-column: 1 / -1;
-      background-color: #383E4C; }
+      background-color: #383E4C;
+      display: grid; }
   .nav-toggle:checked ~ .navigation__navbar > .navigation__container {
     grid-row: 2;
     transform: scaleY(1); } }
