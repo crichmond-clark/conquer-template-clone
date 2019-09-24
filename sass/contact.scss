@@ -90,3 +90,12 @@ textarea::placeholder {
     color:$color-primary-dark;
     font-weight: 400;
 }
+
+
+@media only screen and (max-width: 500px) {
+    
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
