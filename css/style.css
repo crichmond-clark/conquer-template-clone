@@ -192,7 +192,7 @@ a {
 
 @media only screen and (max-width: 1024px) {
   .cta {
-    grid-template-columns: repeat(1, minmax(min-content, 40rem)); }
+    grid-template-columns: repeat(1, minmax(min-content, 27rem)); }
     .cta__card-1 {
       margin-left: 0; }
     .cta__card-3 {
