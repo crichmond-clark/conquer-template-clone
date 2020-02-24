@@ -29,10 +29,10 @@
 
         list-style: none;
         border: $color-primary-light solid 1px;
-        padding: 1rem 2rem;
         color: $color-white;
         font-size: 2rem;
         transition: all .3s;
+        display: flex;
 
         &:hover,
         &:focus,
@@ -43,6 +43,8 @@
 
     &__link {
         text-decoration: none;
+        flex-grow: 1;
+        padding: 1rem 2rem;
 
         &:visited,
         &:link {
